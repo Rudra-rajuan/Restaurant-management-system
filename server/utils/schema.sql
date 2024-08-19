@@ -15,4 +15,6 @@ CREATE TABLE IF NOT EXISTS items (
   item_name VARCHAR(255) NOT NULL,
   item_price DECIMAL(10, 2) NOT NULL,
   item_description TEXT,
-  item_img_url VARCHAR
+  item_img_url VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
