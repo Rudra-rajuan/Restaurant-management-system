@@ -9,7 +9,7 @@ import expressWs from "express-ws";
 
 // Import routes
 import itemRoute from "./api/routes/itemRoute.js";
-// import userRoute from "./api/routes/userRoute.js";
+import userRoute from "./api/routes/userRoute.js";
 
 // Initialize Express
 const app = express();
@@ -46,7 +46,7 @@ app.get("/", (req, res) => {
 
 // Use the routes
 app.use("/api", itemRoute);
-// app.use("/api", userRoute);
+app.use("/api", userRoute);
 
 // Catch 404 and forward to error handler
 app.use((req, res, next) => {
