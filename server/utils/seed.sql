@@ -4,8 +4,10 @@ INSERT INTO users (user_name, user_password, user_email)
 VALUES
   ('admin', 'password123', 'admin@example.com'),
   ('customer1', 'password456', 'customer1@example.com');
-INSERT INTO items (item_name, item_price, item_description)
+INSERT INTO items (item_name, item_price, item_category, item_description, item_img_url)
 VALUES
-  ('Pizza Margherita', 12.99, 'Classic Margherita pizza with tomato sauce, mozzarella, and basil'),
-  ('Pasta Carbonara', 10.99, 'Creamy pasta with pancetta, eggs, and Parmesan cheese'),
-  ('Chicken Alfredo', 14.99, 'Fettuccine pasta with creamy Alfredo sauce and grilled chicken');
+  ('Margherita Pizza', 12.99, 'Pizza', 'Classic cheese pizza with tomato sauce', 'https://example.com/margherita.jpg'),
+  ('Pepperoni Pizza', 14.99, 'Pizza', 'Pepperoni, mozzarella, and tomato sauce', 'https://example.com/pepperoni.jpg'),
+  ('Caesar Salad', 9.99, 'Salad', 'Crisp romaine, parmesan, and Caesar dressing', 'https://example.com/caesar_salad.jpg'),
+  ('Spaghetti Carbonara', 15.99, 'Pasta', 'Spaghetti with pancetta, egg, and parmesan', 'https://example.com/spaghetti_carbonara.jpg'),
+  ('Tiramisu', 6.99, 'Dessert', 'Traditional Italian coffee-flavored dessert', 'https://example.com/tiramisu.jpg');
