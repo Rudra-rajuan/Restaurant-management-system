@@ -9,11 +9,11 @@ CREATE TABLE IF NOT EXISTS users (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
 CREATE TABLE IF NOT EXISTS items (
   id INT AUTO_INCREMENT PRIMARY KEY,
   item_name VARCHAR(255) NOT NULL,
   item_price DECIMAL(10, 2) NOT NULL,
+  item_category VARCHAR(255),
   item_description TEXT,
   item_img_url VARCHAR(255),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
